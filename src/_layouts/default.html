@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{% if page.lang %}{{ page.lang }}{% else %}es{% endif %}" lang="{% if page.lang %}{{ page.lang }}{% else %}es{% endif %}">
+<head>
+	 <title>{{ page.title }}</title>
+	 {% if page.description %}<meta name="description" content="{{ page.description }}"/>{% endif %}
+	 <meta name="author" content="David Villa"/>
+	 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	 <meta http-equiv="Expires" content="604800"/>
+
+	 <link rel="stylesheet" href="{{ site.url }}/stylesheets/stylesheet.css" type="text/css"/>
+</head>
+<body>
+
+	<div class="container-fluid .">
+		<div class="row-fluid">
+			<div class="offset1 span10 header">
+				<div class="title">
+					<a href="{{ site.url }}/index.html">CRySoL</a>
+				</div>
+				<div class="subtitle">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="offset1 span7">
+				{{ content }}
+			</div>
+
+		</div>
+	</div>
+
+	<script src="{{ site.url }}/"></script>
+	
+
+</body>
+</html>

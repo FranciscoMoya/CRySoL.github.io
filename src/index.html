@@ -1,6 +1,6 @@
 ---
 layout: default
-title: MagMax Site
+title: CRySoL Site
 ---
 
 {% assign print_ad = false %}
@@ -23,20 +23,9 @@ title: MagMax Site
 	    <a href="{{ post.url }}" class="post-link">Read more &raquo;</a>
 	  </div>
 	</div>
-
-	{% if print_ad %}
-	<div class="ads hidden-phone">
-	  {% include google-ads-horizontal.html %}
-		{% assign print_ad = false %}
-	</div>
-	{% else %}
-		{% assign print_ad = true %}
-	{% endif %}
   
       </li>
     {% endfor %}
   </ul>
-
-  {% include blog_navigation.html %}
 
 </div>
