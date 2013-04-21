@@ -5,8 +5,6 @@ server_port: 80
 base_url:    /
 url:         http://crysol.github.io/
 
-source:      ./src
-plugins:     ./_plugins
 paginate:    8
 
 lsi:         false
