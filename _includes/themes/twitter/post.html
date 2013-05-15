@@ -11,6 +11,18 @@
       {{ content }}
     </div>
 
+	{% assign author = site.authors[page.author] %}
+	<article class="entry">
+		<header>
+		  <div class="post">
+		<div class="meta">
+			<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40">
+			by <span class="author">{{ author.display_name }}</span>
+		</div>
+	</div>
+		</header>
+	</article>
+
   {% unless page.categories == empty %}
     <ul class="tag_box inline">
       <li><i class="icon-folder-open"></i></li>

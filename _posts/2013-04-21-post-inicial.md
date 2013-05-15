@@ -4,6 +4,7 @@ title: "Post inicial"
 description: ""
 category:
 tags: []
+author: jorgen
 ---
 {% include JB/setup %}
 
